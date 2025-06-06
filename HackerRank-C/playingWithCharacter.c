@@ -8,18 +8,18 @@ int main()
 
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
 
-    char c;
+    char ch;
     char s[100];
     char sen[100];
-    
-    scanf("%c", &c);
-    scanf("%s",&s);
-    scanf("%s",&sen);
 
-    printf("%c\n",c);
-    printf("%s\n",s);
-    printf("%s\n",sen);
-    
+    scanf("%c\n", &ch);
+    printf("%c\n",ch);
+
+    scanf("%s\n", &s);
+    printf("%s\n", s);
+
+    scanf("%[^\n]%*c", &sen);
+    printf("%s\n", sen);
+
     return 0;
 }
-
